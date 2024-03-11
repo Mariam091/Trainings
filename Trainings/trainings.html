@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="trainings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <div class="topnav" id="myTopnav">
+        <a href="#Home">Home</a>
+        <a href="#Companies">Companies</a>
+        <a href="#Trainings" class="active">Trainings</a>
+        <a href="#Blog">Blog</a>
+        <a href="#CV">CV</a>
+        <a href="#Contact">Contact</a>
+        <a href="#Jobs">Jobs</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--header-end-->
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="filter">
+                <div class="searchbar">
+                    <input placeholder="Enter Keyword" id="searchBar" name="searchBar" type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div id="btns" class="filter">
+                    <h3>Category</h3>
+                    <button class='fil-p' onclick='toggleSubcategories("specialSubcategories")'>By price</button>
+                    <div id="specialSubcategories" style="display: none;">
+                        <button class='sub-fil-p' data-filter-type="by_price">Paid</button>
+                        <button class='sub-fil-p' data-filter-type="by_price">Free</button>
+                    </div>
+                    <button class='fil-p' onclick='toggleSubcategories("categorySubcategories")'>By language</button>
+                    <div id="categorySubcategories" style="display: none;">
+                        <button class='sub-fil-p' data-filter-type="by_language">English</button>
+                        <button class='sub-fil-p' data-filter-type="by_language">Armenian</button>
+                        <button class='sub-fil-p' data-filter-type="by_language">Russian</button>
+                    </div>
+
+                    <button class='fil-p' onclick='toggleSubcategories("typeSubcategories")'>By cities</button>
+                    <div id="typeSubcategories" style="display: none;">
+                        <button class='sub-fil-p' data-filter-type="by_cities">Online</button>
+                        <button class='sub-fil-p' data-filter-type="by_cities">Yerevan</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="root">
+                <div class="training-listings">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--footer-->
+    <div class="contain">
+    </div>
+    <footer>
+      <div class="contain">
+        <div class="footer_content">
+          <div class="first_section">
+            <h3 class="footer_headings">About Us</h3>
+            <img src="images/logo-1.png" alt="" />
+            <p>
+              A job portal is a website where people who need jobs can find jobs and companies looking for job seekers can find the perfect employees. It serves as a medium where job seekers can create profiles, upload resumes, and search for job openings across various industries and locations.
+            </p>
+            <div class="social_icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+
+          <div class="second_section">
+            <h3 class="footer_headings">Useful links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Companies</a></li>
+              <li><a href="#">Trainings</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="third_section">
+            <h3 class="footer_headings">Address</h3>
+            <ul>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <span>relab@gmail.com</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Azatutyun 23/24</span>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>+374 99 99-99-99</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="fourth_section">
+            <h3 class="footer_headings">Newsletter</h3>
+            <p>Subscribing to the right email newsletter can deliver the information you need. Done well, an email newsletter with a purpose is like a trusted source helping you cut through the clutter.</p>
+            <form action="#">
+              <div class="form_control">
+                <input type="text" placeholder="Enter an Email" required />
+              </div>
+              <button type="button">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_txt">
+        <p>
+          All rights reservered by
+          <a href="https://www.onlineittuts.com">RELAB</a> &copy; 2024.
+        </p>
+      </div>
+    </footer>
+
+    <!--footer-end-->
+
+    <script src="trainings.js"></script>
+
+
+</body>
+</html>
