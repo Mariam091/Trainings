@@ -114,7 +114,7 @@ function displayTrainings(jobs) {
             <p>Price: ${job.by_price}</p>
             <p>Language: ${job.by_language}</p>
             <p>City: ${job.by_cities}</p>
-            <a href="${job.applyLink}" target="_blank">Apply</a>
+            <a href="${job.applyLink}" target="_blank">View more</a>
         `;
         jobList.appendChild(jobItem);
     });
